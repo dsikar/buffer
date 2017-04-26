@@ -1,3 +1,3 @@
 # Buffer zone for moving files
 
-File stop between transfer.
+File stop between transfers.
