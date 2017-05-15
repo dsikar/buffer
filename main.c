@@ -188,7 +188,9 @@ void main(void)
   CalibrationCountCheck();
   /* Run the main application */
   // Temporarily monitoring interrupts
-  AlarmLED(true);
+  // Turn Alarm LED on - function AlarmLED globally disabled
+  PORTA|=(0x01U<<PA1);
+  
   InterfaceTypeSet();
 
   MainApplication();

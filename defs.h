@@ -7,6 +7,7 @@
 #ifndef INC_DEFS
 #define INC_DEFS
 
+#define ALARM_LED false /* Global AlarmLED flag */
 #define JTAGS_OFF true
 #ifndef JTAGS_OFF
    #define JTAGS_ON true
