@@ -3473,7 +3473,7 @@ void SetToNormalAtPowerUpPlusDisplay(void)
       printf_P("I/F: MX-D\r");
       break;
     default:
-      printf_P("I/F: Invalid Switch Setting\r");
+      printf_P("I/F: Invalid switch setting\r");
       break;
     }
     /* Alarm & Fault latching status */

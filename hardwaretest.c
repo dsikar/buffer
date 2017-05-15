@@ -71,7 +71,7 @@ extern volatile BYTEu g_WtestAdcVal;
 /* ATMega128 Checksum */
 #pragma location=0x1DFFE /* DO NOT MODIFY THIS LINE! */
 /* Update this checksum for every release */
-__root const __hugeflash INT16u g_ApplicationChecksum =  0xC0C5U;
+__root const __hugeflash INT16u g_ApplicationChecksum =  0x8338U;
 
 /* Use the checksum table held in boot sector */
 extern __farflash const INT16u g_sprog_crc16_table[256];
@@ -2357,7 +2357,8 @@ BYTEu SoakTestConditionCheck(BYTEu reqtyp)
       PORTG |= (0x01U << PG2);
       SetAdcMuxChannel(WTEST);
       /* send pulses on alarm led then read wtest i/p */
-      AlarmLED(true);
+      // DaveR Test 2017.05.15 - LED on to monitor interrupt status
+      // AlarmLED(true);
       delayms(LED_FLASH_WAIT);
       if (ReadAdcSettledCh(ADC_CH6_MULX_2_3) < SOAK_TEST_LW_LIM)
       {

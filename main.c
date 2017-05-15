@@ -187,7 +187,8 @@ void main(void)
   /* check calibration */
   CalibrationCountCheck();
   /* Run the main application */
-
+  // Temporarily monitoring interrupts
+  AlarmLED(true);
   InterfaceTypeSet();
 
   MainApplication();
