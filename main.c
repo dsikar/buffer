@@ -82,6 +82,7 @@ void MainApplication(void)
   /* Init Test Byte */
   InitTestByte();
   /* Embedded loop:- */
+
   while (true)
   {
     /* Entry to alarm algo */
