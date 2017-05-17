@@ -71,7 +71,7 @@ extern volatile BYTEu g_WtestAdcVal;
 /* ATMega128 Checksum */
 #pragma location=0x1DFFE /* DO NOT MODIFY THIS LINE! */
 /* Update this checksum for every release */
-__root const __hugeflash INT16u g_ApplicationChecksum =  0x8D4CU;
+__root const __hugeflash INT16u g_ApplicationChecksum =  0x726CU;
 
 /* Use the checksum table held in boot sector */
 extern __farflash const INT16u g_sprog_crc16_table[256];
