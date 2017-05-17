@@ -109,7 +109,7 @@ enum{
 
 /*/ Software Revision ----->      <-- (SIZEOF_VERSION chars) */
 /*/#define CONT_VERSION      "99.997"  */
-#define PRODUCT_NAME      "FV421 - debug Interrupt LED" 
+#define PRODUCT_NAME      "FV421 - 10 second delay" 
 #define CONT_VERSION      "0.028" /* to be IS SIL 2 */
 
 
