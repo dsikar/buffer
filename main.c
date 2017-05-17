@@ -194,6 +194,9 @@ void main(void)
   
   InterfaceTypeSet();
 
+  // Ten second delay to accomodate sensors starting up
+  delayms(10000U);
+  
   MainApplication();
 }
 
