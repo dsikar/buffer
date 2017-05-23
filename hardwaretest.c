@@ -55,7 +55,7 @@ const __farflash INT16u g_AlarmLampLookUp[] = {
  */
 
 /* make true for FINAL */
-BYTEu g_enablechecksum = true; 
+BYTEu g_enablechecksum = false; 
 
 BYTEu g_RunAwayFlg = false;
 volatile BYTEu g_ResetButtonTrigger = 0x00U,g_timer4_20val = 0U,g_flag15v_on = false,g_flag15v_off = false;
