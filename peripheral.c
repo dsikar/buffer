@@ -551,10 +551,10 @@ void PowerUpIndication(void)
  *************************************************************************/
 void Enable_4_20mA(void)
 {
-  printf_P("Calling Enable_4_20mA()");
+  printf_P("Calling Enable_4_20mA()\n");
   if (PersonalityType() != CONVENT_MODE) /* may 2011 */
   {   /* Config PB4 for output. */
-    printf_P("Enabling Enable_4_20mA()");
+    printf_P("Enabling Enable_4_20mA()\n");
     DDRB |= (0x01U << DDB7);
     /* Output-compare  interrupts need to be disabled,  so ensure that OCIE2A in TIMSK2 is zero. - TBC in next spec. */
     StopTimer0_IRQs();
@@ -576,7 +576,7 @@ void Enable_4_20mA(void)
   }
   else
   {
-    printf_P("Not enabling Enable_4_20mA()");
+    printf_P("Not enabling Enable_4_20mA()\n");
     __no_operation();
   }
 }
