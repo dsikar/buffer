@@ -551,6 +551,7 @@ void PowerUpIndication(void)
  *************************************************************************/
 void Enable_4_20mA(void)
 {
+  printf_P("Calling Enable_4_20mA()");
   if (PersonalityType() != CONVENT_MODE) /* may 2011 */
   {   /* Config PB4 for output. */
     DDRB |= (0x01U << DDB7);
