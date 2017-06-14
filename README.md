@@ -40,5 +40,5 @@ _____________,'      ,',_____|      |    | |
 _____________|','   ///_/-------------/   |
               |===========,'
 ```
-Development depends on hardware sitting on Computer 1, firmware upload depends on hardware on Computer 2. Repository sits on network B, which Computer 1 does not have access to.  
-Workaround, create "sub" git repository in src directory. .gitignore ignores everthing, just add what has been changed. Parent .gitignore in turns ignores .git and .gitignore.  Push changes in src to buffer from Computer 1. From Computer 2, pull changes. src directory uses sames .git and .gitignore, leaving it to parent .git and .gitignore to manage changes.
+Development depends on hardware sitting on Computer 1, firmware upload depends on hardware sitting on Computer 2. Repository sits on network B, which Computer 1 does not have access to.  
+Workaround, create "sub" git repository in src directory. .gitignore ignores everthing, just add what has been changed. Parent .gitignore in turn ignores .git and .gitignore.  Push changes in src to (online) buffer from Computer 1. From Computer 2, pull changes. src directory uses sames .git and .gitignore, leaving it to parent .git and .gitignore to manage changes.
